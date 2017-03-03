@@ -13,7 +13,7 @@
     "qrcode-generator": "latest",
     "angular-qrcode": "latest",
     "jQuery.print": "latest",
-    "font-awesome":"latest"
+    "font-awesome": "latest"
   },
   "devDependencies": {
     "angular-mocks": "^1.4.0"

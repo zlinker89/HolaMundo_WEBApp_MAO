@@ -1,8 +1,8 @@
 body{
-    background:url("../images/fondo.jpg");
+    background: black url("../images/fondo.jpg");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 100%;
+    background-size: 80%;
 }
 #QR_page{
     padding: 20px;
