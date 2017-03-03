@@ -8,14 +8,15 @@
  *
  * Main module of the application.
  */
-angular
+var app = angular
   .module('webMaoApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'monospaced.qrcode'
   ])
   .config(function ($routeProvider, $locationProvider) {
     $locationProvider.hashPrefix('');

@@ -9,6 +9,7 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -33,15 +34,15 @@
               <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="#/">webMao</a>
+            <a class="navbar-brand" href="#/">
+              <img src="images/logo.png" alt="" style="transform: translate(0px,-15px)">
+            </a>
           </div>
 
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
 
             <ul class="nav navbar-nav">
               <li class="active"><a href="#/">QR</a></li>
-              <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -81,6 +82,10 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/qrcode-generator/js/qrcode.js"></script>
+    <script src="bower_components/qrcode-generator/js/qrcode_UTF8.js"></script>
+    <script src="bower_components/angular-qrcode/angular-qrcode.js"></script>
+    <script src="bower_components/jQuery.print/jQuery.print.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

@@ -9,7 +9,11 @@
     "angular-resource": "^1.4.0",
     "angular-route": "^1.4.0",
     "angular-sanitize": "^1.4.0",
-    "angular-touch": "^1.4.0"
+    "angular-touch": "^1.4.0",
+    "qrcode-generator": "latest",
+    "angular-qrcode": "latest",
+    "jQuery.print": "latest",
+    "font-awesome":"latest"
   },
   "devDependencies": {
     "angular-mocks": "^1.4.0"
