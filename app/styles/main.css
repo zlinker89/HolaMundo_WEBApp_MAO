@@ -1,0 +1,10 @@
+body{
+    background:url("../images/fondo.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+}
+#QR_page{
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4);
+}
