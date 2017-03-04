@@ -20,7 +20,7 @@ ng-if="n_mesas.length > 0" ng-click="printDiv()">
     <div class="col-sm-4 text-center" ng-repeat="m in n_mesas track by $index">
       <h3><strong>Mesa ID: {{m}}</strong></h3>
       <div style="padding: 10px;border: 2px dashed black">
-        <qrcode data="http://example.com/{{m}}" error-correction-level="H" size="200"></qrcode>
+        <qrcode data="http://192.168.1.5:8080/WebApp/Sumar$_${{m}}" error-correction-level="H" size="200"></qrcode>
       </div>
     </div>
   </div>
