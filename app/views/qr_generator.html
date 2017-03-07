@@ -1,10 +1,14 @@
 <div id="QR_page">
   <div class="row">
-  <div class="col-sm-8 col-sm-offset-2 text-center">
-    <form class="form-inline">
+  <div class="col-sm-8 col-sm-offset-2">
+    <form>
       <div class="form-group">
-        <label for="exampleInputEmail1">ID de la mesa(s):</label>
+        <label for="exampleInputEmail1" style="color:white">ID de la mesa(s):</label>
         <input type="text" class="form-control" ng-model="ID_mesa" size="45" id="exampleInputEmail1" placeholder="Ingresar el ID de las mesas. Ej:5,2,8,9,10 ó 1-9">
+      </div>
+      <div class="form-group">
+        <label for="host" style="color:white">URL:</label>
+        <input type="text" class="form-control" ng-model="host" size="45" id="host" placeholder="Ej: http://192.168.1.12/prueba.asmx">
       </div>
         <button class="btn btn-success" ng-click="GenerarQR()">Generar</button>
     </form>
@@ -18,9 +22,9 @@ ng-if="n_mesas.length > 0" ng-click="printDiv()">
   <div class="col-sm-12" id="printable">
     <br>
     <div class="col-sm-4 text-center" ng-repeat="m in n_mesas track by $index">
-      <h3><strong>Mesa ID: {{m}}</strong></h3>
+      <h3 style="color:white"><strong>Mesa ID: {{m}}</strong></h3>
       <div style="padding: 10px;border: 2px dashed black">
-        <qrcode data="http://192.168.1.5:8080/WebApp/Sumar$_${{m}}" error-correction-level="H" size="200"></qrcode>
+        <qrcode data="{{host}}$_${{m}}" error-correction-level="H" size="200"></qrcode>
       </div>
     </div>
   </div>
