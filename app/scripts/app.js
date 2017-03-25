@@ -18,15 +18,15 @@ var app = angular
     'ngTouch',
     'monospaced.qrcode'
   ])
-  .config(function ($routeProvider, $locationProvider) {
-    $locationProvider.hashPrefix('');
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/qr_generator.html',
-        controller: 'QRgeneratorCtrl',
-        controllerAs: 'QRgenerator'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
-  });
+  // .config(function ($routeProvider, $locationProvider) {
+  //   $locationProvider.hashPrefix('');
+  //   $routeProvider
+  //     .when('/', {
+  //       templateUrl: 'views/qr_generator.html',
+  //       controller: 'QRgeneratorCtrl',
+  //       controllerAs: 'QRgenerator'
+  //     })
+  //     .otherwise({
+  //       redirectTo: '/'
+  //     });
+  // });

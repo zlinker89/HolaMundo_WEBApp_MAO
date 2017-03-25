@@ -8,7 +8,7 @@
  * Controller of the webMaoApp
  */
 
-app.controller('QRgeneratorCtrl', function ($scope) {
+app.controller('QRgeneratorCtrl',[ "$scope", function ($scope) {
   $scope.n_mesas = [];
   $scope.ID_mesa = "";
   $scope.GenerarQR = function () {
@@ -46,4 +46,4 @@ app.controller('QRgeneratorCtrl', function ($scope) {
   $scope.printDiv = function() {
 		$.print("#printable");
 	}; 
-});
+}]);
